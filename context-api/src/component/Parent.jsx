@@ -1,0 +1,12 @@
+import React from "react";
+import Child from "./Child";
+
+function Parent(props) {
+  return (
+    <div style={{ height: "100vh", width: "100vw", backgroundColor: "red" }}>
+      <Child />
+    </div>
+  );
+}
+
+export default Parent;

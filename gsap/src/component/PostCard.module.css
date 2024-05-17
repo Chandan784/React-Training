@@ -1,0 +1,16 @@
+.card {
+  height: auto;
+  width: 450px;
+  background-color: black;
+  text-align: center;
+  word-wrap: wrap;
+  border-radius: 20px;
+}
+
+.title {
+}
+
+.des {
+  font-size: 20px;
+  color: white;
+}

@@ -10,6 +10,8 @@ import { Outlet } from "react-router-dom";
 import Service from "./component/service";
 
 function App() {
+  let [x, setX] = useState();
+
   return (
     <>
       <Header />

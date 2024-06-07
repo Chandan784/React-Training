@@ -35,6 +35,15 @@ let routes = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/mama",
+    element: <Service />,
+    children: [
+      {
+        path: "/mama",
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <div className="navbar  h-20 bg-blue-800 text-white flex justify-between items-center text-xl font-medium p-4  ">
+      <div className="navbar  h-20 bg-red-800 text-white flex justify-between items-center text-xl font-medium p-4  ">
         <div className="left">
           <h1>Blogify</h1>
         </div>

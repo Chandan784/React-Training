@@ -25,9 +25,9 @@ function Banner() {
   });
 
   return (
-    <div className=" h-[80vh] w-full flex flex-col justify-center items-center  bg-[url('https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center opacity-70 ">
-      <div id="heading" className="intro text-6xl  font-semibold  text-white ">
-        <span className=" inline-block">w</span>
+    <div className=" h-[80vh] w-full flex flex-col justify-center items-center  bg-[url('https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center  backdrop-opacity-100 text-white">
+      <div id="heading" className="intro text-6xl  font-semibold  ">
+        <span className=" inline-block ">w</span>
         <span className=" inline-block">e</span>
         <span className=" inline-block">l</span>
         <span className=" inline-block">c</span>

@@ -21,7 +21,7 @@ function Category() {
   ];
 
   return (
-    <div className=" flex overflow-x-auto space-x-4 p-4 bg-gray-100 ">
+    <div className=" flex scrollbar-none overflow-x-auto  space-x-4 p-4 bg-gray-100 ">
       {category.map((e) => {
         return <CategoryCard data={e} />;
       })}

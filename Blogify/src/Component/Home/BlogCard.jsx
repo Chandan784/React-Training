@@ -14,9 +14,9 @@ function BlogCard({ data }) {
       <h1 className=" text-2xl font-bold text-left w-full my-4 pl-4 pr-20">
         {data.blogTitle}
       </h1>
-      <p className=" font-normal w-full pr-10 pl-4 pb-4 ">
+      {/* <p className=" font-normal w-full pr-10 pl-4 pb-4 ">
         {data.blogDescription}
-      </p>
+      </p> */}
       <div className=" flex items-center justify-start w-full gap-4 pl-4 pb-4">
         <img className="h-10 rounded-full " src={author} alt="" />
         <div>

@@ -57,7 +57,7 @@ function Blogs() {
         {" "}
         Explore Blogs
       </h1>
-      <div className=" h-fit grid grid-cols-4  w-full gap-6   bg-blue-600 p-8">
+      <div className=" h-fit grid lg:grid-cols-4  w-full gap-6   bg-blue-600  p-4 lg:p-8">
         {blogs.map((data) => {
           return <BlogCard data={data} />;
         })}

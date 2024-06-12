@@ -9,6 +9,7 @@ import About from "./Component/About/About.jsx";
 import Contact from "./Component/Contact/Contact.jsx";
 import Login from "./Component/Auth/Login.jsx";
 import Signup from "./Component/Auth/Signup.jsx";
+import CreateBlog from "./Component/Blogs/CreateBlog.jsx";
 
 let routes = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ let routes = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "/create-blog",
+        element: <CreateBlog />,
       },
     ],
   },

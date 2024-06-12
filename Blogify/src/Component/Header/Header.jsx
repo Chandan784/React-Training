@@ -7,7 +7,7 @@ function Header() {
   let [menu, setMenu] = useState(1);
   return (
     <>
-      <div className="navbar relative   lg:h-20 bg-red-800 text-white flex gap-5 justify-between flex-col lg:flex-row  lg:items-center text-xl font-medium p-4  ">
+      <div className="navbar relative   lg:h-20 bg-slate-900 text-white flex gap-5 justify-between flex-col lg:flex-row  lg:items-center text-xl font-medium p-4  ">
         <div className="left">
           <h1>Blogify</h1>
         </div>
@@ -16,10 +16,10 @@ function Header() {
           className={`medium ${display}  flex flex-col  text-center lg:flex-row gap-4 lg:flex
     lg:gap-2  font-medium lg:block`}
         >
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-          <Link>Create Blog</Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/create-blog">CreateBlog</Link>
         </div>
 
         <div

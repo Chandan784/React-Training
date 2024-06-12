@@ -1,5 +1,5 @@
 import React from "react";
-import Blogs from "./Blogs";
+import Blogs from "../Blogs/Blogs";
 import Banner from "./Banner";
 import Category from "../Category/Category";
 

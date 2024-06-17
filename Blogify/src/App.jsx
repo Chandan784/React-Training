@@ -5,14 +5,17 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
+import AuthContext from "./Component/Store/AuthStore";
 function App() {
+  let [isLogin, setIsLogin] = useState(false);
+
   return (
     <>
-      <Header />
-
-      <Outlet />
-
-      <Footer />
+      <AuthContext.Provider value={{ isLogin, setIsLogin }}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </AuthContext.Provider>
     </>
   );
 }

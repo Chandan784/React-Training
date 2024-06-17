@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import AuthContext from "../Store/AuthStore";
 
 function Login() {
+  let authData = useContext(AuthContext);
+
+  let navigate = useNavigate();
+
+  function handelSignupBtn() {
+    console.log("signup");
+    authData.setIsLogin(true);
+
+    navigate("/");
+  }
+
   return (
     <div className=" w-full text-center h-screen flex justify-center items-center bg-slate-200">
       <div className=" h-screen bg-slate-200 w-3/4 flex  flex-col justify-center items-center flex-col-reverse lg:flex-row     ">
@@ -29,7 +41,10 @@ function Login() {
             className="  w-full bg-slate-300  rounded-lg py-2 px-4 my-2  outline-red-500"
           />
 
-          <button className=" w-full bg-red-700   rounded-2xl py-3 px-4 my-4  text-white font-semibold mt-12  ">
+          <button
+            className=" w-full bg-red-700   rounded-2xl py-3 px-4 my-4  text-white font-semibold mt-12  "
+            onClick={handelSignupBtn}
+          >
             Sign In
           </button>
 
